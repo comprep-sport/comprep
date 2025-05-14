@@ -21,6 +21,7 @@
 #'   logical, whether the recalculated is in the margin.
 #' @examples
 #' comp(0.51, "0.5")
+#' @export
 
 comp <- function(recalculated, reported, margin = 0.01) {
   # input validation
