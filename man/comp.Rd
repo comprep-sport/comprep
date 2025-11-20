@@ -20,7 +20,7 @@ to 1\%.}
 \value{
 A list with different elements: \code{margin} return the error margin as
 a vector. \code{recalculated} repeats the recalculated value. \code{correct} is a
-logical, whether the recalculated is in the margin.
+logical, whether the recalculated value is within the margin.
 }
 \description{
 Assesses the numerical correctness of a reproduced result by calculating

@@ -18,7 +18,7 @@
 #'
 #' @returns A list with different elements: `margin` return the error margin as
 #'   a vector. `recalculated` repeats the recalculated value. `correct` is a
-#'   logical, whether the recalculated is in the margin.
+#'   logical, whether the recalculated value is within the margin.
 #' @examples
 #' comp(0.51, "0.5")
 #' @export
@@ -27,7 +27,7 @@ comp <- function(recalculated, reported, margin = 0.01) {
   # input validation
   if (!is.numeric(recalculated)) stop("'recalculated' needs to be numeric.")
   if (!is.character(reported)) stop("'reported' needs to be a character.")
-  if (!is.numeric(margin)) stop("'margin' need to be numeric.")
+  if (!is.numeric(margin)) stop("'margin' needs to be numeric.")
 
   # convert to number
   num <- as.numeric(reported)
