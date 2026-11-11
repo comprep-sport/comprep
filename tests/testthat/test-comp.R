@@ -17,3 +17,8 @@ test_that("correct results are calculated", {
   expect_true(comp(0.52, "0.5")$correct)
   expect_false(comp(0.7, "0.5")$correct)
 })
+
+test_that("correct results are calculated for negative values", {
+  expect_true(comp(-0.443, "-0.44")$correct)
+  expect_false(comp(-0.443, "-0.5")$correct)
+})

@@ -1,4 +1,4 @@
-# comprep (development version)
+# comprep  0.0.1
 
-* Create function to compare recalculated with reported value
-* Create function to compare recalculated p-values with reported p-values
+* Fix critical bug in boundary definition for negative values in `comp()`
+

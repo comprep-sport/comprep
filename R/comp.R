@@ -45,6 +45,9 @@ comp <- function(recalculated, reported, margin = 0.01) {
   # Return the lower and upper bound
   bounds <- c(lower = num - half_unit, upper = num + half_unit)
 
+  # reverted logic for negative values
+  if(reported < 0) margin <- -margin
+
   # add additional error margin
   bounds[[1]] <- bounds[[1]] * (1 - margin)
   bounds[[2]] <- bounds[[2]] * (1 + margin)
